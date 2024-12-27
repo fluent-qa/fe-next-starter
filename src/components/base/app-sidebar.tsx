@@ -14,27 +14,24 @@ import {
     Settings2,
     SquareTerminal,
 } from "lucide-react"
+import { group } from "console";
 
 const groupMenuData = {
-    groupName: "My Views",
+    groupName: "Thoughts",
     items: [
         {
-            title: "Playground",
+            title: "Opnions",
             url: "#",
             icon: SquareTerminal,
             isActive: true,
             items: [
                 {
                     title: "Writing",
-                    url: "#",
+                    url: "/writing",
                 },
                 {
                     title: "Feeds",
-                    url: "#",
-                },
-                {
-                    title: "Tutorials",
-                    url: "#",
+                    url: "/feeds",
                 },
             ],
         },
@@ -104,6 +101,11 @@ const groupMenuData = {
         //     ],
         // },
     ]
+}
+
+const tutorialsMenuData = {
+    groupName: "教程",
+    items: []
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {

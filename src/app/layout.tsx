@@ -33,7 +33,7 @@ export default function RootLayout({
         <SidebarProvider  style={
           {
             "--sidebar-width": "10rem",
-            "--sidebar-width-mobile": "20rem",
+            "--sidebar-width-mobile": "10em",
           } as React.CSSProperties
         } defaultOpen={defaultOpen}>
           <div className="flex h-screen overflow-hidden">
