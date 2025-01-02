@@ -18,6 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const defaultOpen=false
+  //todo: add  checking
   return (
     <html lang="en" suppressHydrationWarning>
     <body className={cn(
@@ -26,7 +27,7 @@ export default function RootLayout({
     )}>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="light"
         enableSystem
         disableTransitionOnChange
       >
